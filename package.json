@@ -22,11 +22,13 @@
     "bootstrap": "^3.3.7",
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
+    "ejs": "^2.6.1",
     "eslint": "^4.19.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
@@ -34,8 +36,10 @@
   },
   "nodemonConfig": {
     "restartable": "rs",
-    "ignore": ["node_modules/**/node_modules"],
-    "delay": "2500",
+    "delay": 2500,
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
     "env": {
       "NODE_ENV": "development",
       "PORT": 4000
